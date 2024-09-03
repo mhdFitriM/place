@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Places</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPyDbSSao5JOxiTLETXEU7neCpLqpxiwE&libraries=places"></script>
+</head>
+<body>
+    <h1>Find Places</h1>
+    <input type="text" id="place-input" placeholder="Enter a place name">
+    <button onclick="searchPlace()">Search</button>
+    <button onclick="searchNearby()">Search Around Me</button>
+    <button onclick="sortByReviews()">Sort by Most Reviewed</button>
+    <div id="places-list"></div>
+    <div id="map" style="height: 500px; width: 100%;"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
